@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>拖拽组件开发</title>
+<script src="drag.js"></script>
+<style>
+	body{margin: 0;padding: 0; width: 2500px;height: 2500px;}
+	div{position: absolute; top:0; height: 0;width: 100px; height: 100px;float: left;}
+	#div1{background-color: red; }
+	#div2{background-color: purple;left: 100px;}
+	#div3{background-color: yellow;left: 200px;}
+	#div4{background-color: pink;left: 300px;}
+</style>
+<script>
+window.onload=function(){
+	var drag1 = new Drag();
+	drag1.init({
+		//配置参数 
+		'id':'div1'
+	});
+
+	var drag2 = new Drag();
+	drag2.init({
+		//配置参数 
+		'id':'div2',
+		'toDown' : function(){
+			document.title = 'div2toDown';
+		}
+	});
+
+	var drag3 = new Drag();
+	drag3.init({
+		//配置参数 
+		'id':'div3',
+		'toDown' : function(){
+			document.title = 'div3toDown';
+		},
+		'toUp' : function(){
+			document.title = 'div3toUp';
+		}
+	});
+
+	var drag4 = new Drag();
+	drag4.init({
+		//配置参数 
+		'id':'div4',
+		'toDown' : function(){
+			document.title = 'div4toDown';
+		},
+		'toUp' : function(){
+			document.title = 'div4toUp';
+		}
+	});
+	
+	
+}
+
+
+</script>
+</head>
+<body>
+	<div id='div1'>
+		
+	</div>
+	<div id="div2">
+		
+	</div>
+	<div id='div3'>
+		
+	</div>
+	<div id="div4">
+		
+	</div>
+</body>
+</html>

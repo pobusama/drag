@@ -1,4 +1,4 @@
-//drag组件
+//drag组件.
 
 function Drag(){
 	this.obj = null;
@@ -32,7 +32,7 @@ Drag.prototype.init=function(options){
 		return false;
 	}
 }
-
+//鼠标按下执行的函数
 Drag.prototype.fnDown = function(ev){
 	var ev = ev||window.event;
 	var _this = this;

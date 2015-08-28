@@ -1,5 +1,5 @@
 //drag组件.
-
+//new1
 function Drag(){
 	this.obj = null;
 	this.disX =0;

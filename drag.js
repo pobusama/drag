@@ -1,5 +1,7 @@
 //drag组件.
+
 //branch master
+
 function Drag(){
 	this.obj = null;
 	this.disX =0;

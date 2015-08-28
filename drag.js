@@ -1,6 +1,7 @@
 //drag组件.
 
 //branch master
+//branch new1
 
 function Drag(){
 	this.obj = null;

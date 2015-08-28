@@ -1,5 +1,5 @@
 //drag组件.
-//new2
+//branch new2
 function Drag(){
 	this.obj = null;
 	this.disX =0;
